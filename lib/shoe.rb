@@ -7,14 +7,14 @@ class Shoe
   def initialize(brand)
     @brand = brand
      
-    if BRANDS.none?(brand)
+    if BRANDS.none? {|old_brand| old_brand == brand}
     BRANDS << brand
   end 
   end
   
   def brand=(brand)
     @brand = brand 
-    if BRANDS.none(brand)
+    if BRANDS.none?  {|old_brand| old_brand == brand}
     BRANDS << brand 
   end 
   end 
