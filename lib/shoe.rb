@@ -9,6 +9,7 @@ class Shoe
     BRANDS << brand 
     if BRANDS.none (brand)
     BRANDS << brand
+  end 
   end
   
   def brand=(brand)
