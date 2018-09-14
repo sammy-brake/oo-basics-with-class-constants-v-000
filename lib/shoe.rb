@@ -14,6 +14,7 @@ class Shoe
     if !(BRANDS.any? (brand))
     BRANDS << brand 
   end 
+  end 
 
   def cobble
     self.condition = "new"
